@@ -1,0 +1,246 @@
+
+/* ---------- Importação de Fonte ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ---------- Variáveis locais ---------- */
+:root {
+    --etec-bg: #f5f7fa;
+    --etec-card-bg: #ffffff;
+    --etec-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    --etec-shadow-hover: 0 20px 48px rgba(0, 0, 0, 0.14);
+    --etec-radius: 20px;
+    --etec-transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.etec-main {
+    flex: 1;
+    padding: 3rem 2rem 4rem;
+    background-color: var(--etec-bg);
+    font-family: 'Inter', Georgia, serif;
+}
+
+.etec-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.etec-header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 700;
+    color: #111;
+    letter-spacing: -0.5px;
+    position: relative;
+    display: inline-block;
+}
+
+.etec-header h1::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 4px;
+    background: var(--cor-menta, #AAFFE1);
+    border-radius: 2px;
+    margin: 0.6rem auto 0;
+}
+
+.etec-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.etec-card {
+    background-color: var(--etec-card-bg);
+    border-radius: var(--etec-radius);
+    box-shadow: var(--etec-shadow);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform var(--etec-transition), box-shadow var(--etec-transition);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    position: relative;
+    overflow: hidden;
+}
+
+.etec-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--cor-menta, #AAFFE1), #6ee7c7);
+    opacity: 0;
+    transition: opacity var(--etec-transition);
+}
+
+.etec-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--etec-shadow-hover);
+}
+
+.etec-card:hover::before {
+    opacity: 1;
+}
+
+.etec-card-img-wrapper {
+    width: 100%;
+    max-width: 240px;
+    background-color: #f8f9fb;
+    border-radius: 14px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: background-color var(--etec-transition);
+}
+
+.etec-card:hover .etec-card-img-wrapper {
+    background-color: #f0fdf8;
+}
+
+.etec-card-img-wrapper img {
+    display: block;
+    max-width: 100%;
+    max-height: 110px;
+    object-fit: contain;
+    transition: transform var(--etec-transition);
+}
+
+.etec-card:hover .etec-card-img-wrapper img {
+    transform: scale(1.04);
+}
+
+.etec-card-img-wrapper--foto {
+    padding: 0;
+    overflow: hidden;
+    min-height: 160px;
+    max-width: 100%;
+}
+
+.etec-card-img-wrapper--foto img {
+    width: 100%;
+    height: 160px;
+    max-height: none;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: transform var(--etec-transition);
+}
+
+.etec-card:hover .etec-card-img-wrapper--foto img {
+    transform: scale(1.04);
+}
+
+.etec-card p {
+    font-size: 0.97rem;
+    line-height: 1.7;
+    color: #444;
+    margin: 0;
+}
+
+/* ---------- Responsividade ---------- */
+@media (max-width: 640px) {
+    .etec-main {
+        padding: 2rem 1.25rem 3rem;
+    }
+
+    .etec-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .etec-card-img-wrapper {
+        max-width: 100%;
+    }
+}
+
+.etec-social-section {
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    text-align: center;
+}
+
+.etec-social-titulo {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: #111;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.75rem;
+    position: relative;
+    display: inline-block;
+}
+
+.etec-social-titulo::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 3px;
+    background: var(--cor-menta, #AAFFE1);
+    border-radius: 2px;
+    margin: 0.5rem auto 0;
+}
+
+.etec-social-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.etec-social-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1.5rem 2rem;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: transform var(--etec-transition, 0.35s ease),
+                box-shadow var(--etec-transition, 0.35s ease),
+                border-color var(--etec-transition, 0.35s ease);
+    min-width: 140px;
+}
+
+.etec-social-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(170, 255, 225, 0.35), 0 6px 18px rgba(0, 0, 0, 0.1);
+    border-color: var(--cor-menta, #AAFFE1);
+    color: #111;
+}
+
+.etec-social-card img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    transition: transform var(--etec-transition, 0.35s ease);
+}
+
+.etec-social-card:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+    .etec-social-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .etec-social-card {
+        width: 100%;
+        max-width: 260px;
+    }
+}
+
