@@ -1,0 +1,221 @@
+.dev-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+    width: 100%;
+}
+
+.dev-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 56px;
+}
+
+.dev-eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #111111;
+    background-color: var(--cor-menta, #AAFFE1);
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+}
+
+.dev-titulo {
+    font-size: clamp(2rem, 4vw, 2.85rem);
+    font-weight: 700;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #111111;
+    line-height: 1.25;
+    margin-bottom: 16px;
+}
+
+.dev-titulo-linha {
+    width: 48px;
+    height: 3px;
+    background-color: var(--cor-menta, #AAFFE1);
+    border-radius: 2px;
+    margin: 0 auto 22px;
+}
+
+.dev-introducao {
+    font-size: 1.08rem;
+    color: #444444;
+    line-height: 1.75;
+}
+
+.dev-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 60px;
+}
+
+.dev-card {
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 18px;
+    padding: 36px 24px 30px;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dev-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+    border-color: var(--cor-menta, #AAFFE1);
+}
+
+.dev-avatar-wrapper {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 22px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, var(--cor-menta, #AAFFE1) 0%, #000000 100%);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.dev-avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    background-color: #f0f0f0;
+}
+
+.dev-card-nome {
+    font-size: 1.35rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+.dev-card-cargo {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #0d4633;
+    background-color: #d8faed;
+    border: 1px solid #AAFFE1;
+    padding: 4px 12px;
+    border-radius: 14px;
+    margin-bottom: 14px;
+}
+
+.dev-card-desc {
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.6;
+    margin-top: auto;
+}
+
+.dev-banner-creditos {
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    border-left: 5px solid var(--cor-menta, #AAFFE1);
+    border-radius: 14px;
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+
+.dev-banner-texto h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #111111;
+    margin-bottom: 6px;
+}
+
+.dev-banner-texto p {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.dev-banner-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: #000000;
+    color: var(--cor-menta, #AAFFE1);
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 30px;
+    white-space: nowrap;
+    transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+.dev-banner-btn:hover {
+    background-color: var(--cor-menta, #AAFFE1);
+    color: #000000;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   RESPONSIVIDADE
+   ========================================= */
+
+@media (max-width: 900px) {
+    .dev-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .dev-banner-creditos {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .dev-banner-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 620px) {
+    .dev-main {
+        padding: 40px 18px 60px;
+    }
+
+    .dev-grid {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+        margin: 0 auto 48px;
+    }
+
+    .dev-header {
+        margin-bottom: 40px;
+    }
+
+    .dev-titulo {
+        font-size: 1.85rem;
+    }
+
+    .dev-banner-creditos {
+        padding: 22px 20px;
+    }
+}

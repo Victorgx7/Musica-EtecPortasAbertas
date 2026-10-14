@@ -1,0 +1,583 @@
+.cr-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 52px 24px 80px;
+    width: 100%;
+}
+
+/* =========================================
+   1. CABEÇALHO INSTITUCIONAL COM LOGO DO CURSO
+   ========================================= */
+
+.cr-header {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.cr-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.cr-header-logo-box {
+    flex-shrink: 0;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0b12;
+    border: 2px solid var(--cor-menta, #AAFFE1);
+    border-radius: 18px;
+    padding: 6px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cr-header-logo-box:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 26px rgba(170, 255, 225, 0.25);
+}
+
+.cr-curso-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Quando o arquivo de logo ainda não existir, oculta a caixinha automaticamente sem quebrar o layout */
+.cr-header-logo-box.cr-logo-placeholder {
+    display: none;
+}
+
+.cr-header-textos {
+    text-align: left;
+}
+
+.cr-header-eyebrow {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #0c4a34;
+    background-color: #dffbf1;
+    border: 1px solid var(--cor-menta, #AAFFE1);
+    padding: 4px 12px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+}
+
+.cr-header-titulo {
+    font-size: clamp(2rem, 3.8vw, 2.75rem);
+    font-weight: 700;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #111111;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.cr-header-linha {
+    width: 44px;
+    height: 3px;
+    background-color: var(--cor-menta, #AAFFE1);
+    border-radius: 2px;
+    margin-bottom: 12px;
+}
+
+.cr-header-subtitulo {
+    font-size: 1.05rem;
+    color: #444444;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.cr-secao-turma {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 36px 36px 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    margin-bottom: 56px;
+}
+
+.cr-turma-topo {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 28px;
+}
+
+.cr-turma-badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #111111;
+    background-color: var(--cor-menta, #AAFFE1);
+    padding: 4px 12px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+.cr-turma-titulo {
+    font-size: 1.65rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.cr-turma-desc {
+    font-size: 0.98rem;
+    color: #555555;
+    line-height: 1.65;
+    margin: 0;
+}
+
+.cr-capa-wrapper {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    background-color: #000000;
+}
+
+.cr-capa-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.cr-capa-wrapper:hover .cr-capa-img {
+    transform: scale(1.02);
+}
+
+.cr-capa-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 28px 24px 18px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.45) 60%, transparent 100%);
+    color: #ffffff;
+}
+
+.cr-capa-overlay h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cr-capa-overlay p {
+    font-size: 0.88rem;
+    color: var(--cor-menta, #AAFFE1);
+    margin: 0;
+}
+
+.cr-turma-detalhes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.cr-detalhe-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.cr-detalhe-item:hover {
+    border-color: var(--cor-menta, #AAFFE1);
+    background-color: #ffffff;
+}
+
+.cr-detalhe-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.cr-detalhe-textos strong {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #111111;
+    margin-bottom: 2px;
+}
+
+.cr-detalhe-textos span {
+    font-size: 0.92rem;
+    color: #4b5563;
+}
+
+.cr-secao-equipe {
+    margin-bottom: 32px;
+}
+
+.cr-secao-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 32px;
+}
+
+.cr-secao-eyebrow {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #0c4a34;
+    background-color: #dffbf1;
+    border: 1px solid var(--cor-menta, #AAFFE1);
+    padding: 4px 12px;
+    border-radius: 14px;
+    margin-bottom: 10px;
+}
+
+.cr-secao-titulo {
+    font-size: 1.85rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+.cr-secao-linha {
+    width: 36px;
+    height: 3px;
+    background-color: var(--cor-menta, #AAFFE1);
+    border-radius: 2px;
+    margin: 0 auto 12px;
+}
+
+.cr-secao-desc {
+    font-size: 0.95rem;
+    color: #555555;
+    margin: 0;
+}
+
+.cr-cards-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.cr-cards-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+
+.cr-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 32px 20px 26px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.cr-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+    border-color: var(--cor-menta, #AAFFE1);
+}
+
+.cr-card-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    border: 3px solid var(--cor-menta, #AAFFE1);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #f3f4f6;
+    flex-shrink: 0;
+}
+
+.cr-card-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+}
+
+.cr-card-nome {
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #111111;
+    margin-bottom: 6px;
+}
+
+.cr-card-funcao {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #0c4a34;
+    background-color: #dffbf1;
+    border: 1px solid #c0f6e3;
+    padding: 4px 12px;
+    border-radius: 12px;
+    display: inline-block;
+    line-height: 1.4;
+    margin-top: auto;
+}
+
+/* Espaçador moderado entre as duas seções */
+.cr-espaco-secoes {
+    height: 48px;
+}
+
+
+.cr-secao-logo-final {
+    margin-top: 52px;
+}
+
+.cr-curso-banner {
+    background: linear-gradient(135deg, #ffffff 0%, #f6fbf9 100%);
+    border: 1px solid #e2ede8;
+    border-left: 5px solid var(--cor-menta, #AAFFE1);
+    border-radius: 20px;
+    padding: 34px 40px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.cr-curso-banner:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border-color: var(--cor-menta, #AAFFE1);
+}
+
+.cr-curso-logo-card {
+    flex-shrink: 0;
+    width: 150px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0b12;
+    border: 2px solid var(--cor-menta, #AAFFE1);
+    border-radius: 18px;
+    padding: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 0 16px rgba(170, 255, 225, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cr-curso-banner:hover .cr-curso-logo-card {
+    transform: scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25), 0 0 20px rgba(170, 255, 225, 0.3);
+}
+
+.cr-curso-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.cr-curso-banner:hover .cr-curso-logo-img {
+    transform: scale(1.04);
+}
+
+.cr-curso-logo-placeholder-aviso {
+    display: none;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555555;
+}
+
+.cr-curso-logo-card.cr-logo-pendente .cr-curso-logo-img {
+    display: none;
+}
+
+.cr-curso-logo-card.cr-logo-pendente .cr-curso-logo-placeholder-aviso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.cr-logo-aviso-icon {
+    font-size: 1.8rem;
+}
+
+.cr-curso-logo-placeholder-aviso strong {
+    font-size: 0.8rem;
+    color: #111111;
+    line-height: 1.3;
+}
+
+.cr-curso-logo-placeholder-aviso code {
+    background-color: #edfdf6;
+    border: 1px solid #c0f6e3;
+    color: #0c4a34;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 0.72rem;
+    word-break: break-all;
+}
+
+.cr-curso-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.cr-curso-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: #0c4a34;
+    background-color: #dffbf1;
+    border: 1px solid var(--cor-menta, #AAFFE1);
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.cr-curso-nome {
+    font-size: 1.55rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    color: #111111;
+    margin-bottom: 4px;
+}
+
+.cr-curso-instituicao {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #0c4a34;
+    margin-bottom: 10px;
+}
+
+.cr-curso-desc {
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+   ========================================= */
+
+@media (max-width: 900px) {
+    .cr-cards-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .cr-card:last-child {
+        grid-column: span 2;
+        max-width: 420px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .cr-turma-detalhes {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .cr-capa-img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 680px) {
+    .cr-main {
+        padding: 36px 18px 60px;
+    }
+
+    .cr-header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .cr-header-textos {
+        text-align: center;
+    }
+
+    .cr-header-linha {
+        margin: 0 auto 12px;
+    }
+
+    .cr-secao-turma {
+        padding: 24px 18px;
+    }
+
+    .cr-cards-grid-3,
+    .cr-cards-grid-2 {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .cr-card:last-child {
+        grid-column: span 1;
+        max-width: none;
+    }
+
+    .cr-capa-img {
+        height: 220px;
+    }
+
+    .cr-capa-overlay h3 {
+        font-size: 1.05rem;
+    }
+
+    .cr-curso-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 28px 20px;
+        gap: 20px;
+    }
+
+    .cr-curso-logo-card {
+        width: 100%;
+        max-width: 200px;
+    }
+}
