@@ -89,20 +89,6 @@ Projeto-m-sica/
 
 > A pasta `css/` pode conter outros arquivos, usados por páginas como Importância e Créditos. Os listados acima são os que aparecem no código de `index.html`, `sobre.html` e `subdivisoes.html`.
 
----
-
-## ▶️ Como acessar e executar
-
-### Online
-
-O projeto já está publicado e pode ser acessado diretamente em:
-
-👉 https://victorgx7.github.io/Projeto-m-sica/index.html
-
-> Os vídeos do YouTube e os links das redes sociais precisam de conexão com a internet.
-
----
-
 ## 🧩 Padrões do código
 
 - **CSS por página:** cada página carrega `css/style.css` (comum a todas) e o CSS próprio dela. Ex.: `index.html` carrega `home.css`, e `sobre.html` carrega `sobre.css`.
