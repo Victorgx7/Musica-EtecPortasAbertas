@@ -4,7 +4,7 @@ Site educativo sobre música, desenvolvido como Projeto Integrador do curso de *
 
 O site apresenta conceitos sobre música, seus principais grupos e estilos, e sua importância para as emoções, a criatividade, a conexão entre pessoas e a identidade cultural.
 
-🔗 **Acesse o site:** https://victorgx7.github.io/Projeto-m-sica/index.html
+🔗 **Acesse o site:** [https://victorgx7.github.io/Musica-EtecPortasAbertas/]
 
 🎨 **Protótipo no Figma:** https://www.figma.com/design/OPh7Z2orXz0FEgmYvUokMT/Projeto---M%C3%BAsica
 
