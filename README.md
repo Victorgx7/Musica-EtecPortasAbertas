@@ -5,6 +5,7 @@ Site educativo sobre música, desenvolvido como Projeto Integrador do curso de *
 O site apresenta o que é música, seus grandes grupos e estilos, e sua importância para as emoções, a mente, a conexão entre pessoas e a identidade cultural. É feito com páginas estáticas em HTML e CSS.
 
 🔗 **Site no ar:** https://victorgx7.github.io/Projeto-m-sica/index.html
+🔗 **Protótipo de Alta fidelidade:** https://www.figma.com/design/OPh7Z2orXz0FEgmYvUokMT/Projeto---M%C3%BAsica?node-id=0-1&t=WVPcLherEKcODLbF-1
 
 ---
 
