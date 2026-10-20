@@ -5,6 +5,7 @@ Site educativo sobre música, desenvolvido como Projeto Integrador do curso de *
 O site apresenta o que é música, seus grandes grupos e estilos, e sua importância para as emoções, a mente, a conexão entre pessoas e a identidade cultural. É feito com páginas estáticas em HTML e CSS.
 
 🔗 **Site no ar:** https://victorgx7.github.io/Projeto-m-sica/index.html
+
 🔗 **Protótipo de Alta fidelidade:** https://www.figma.com/design/OPh7Z2orXz0FEgmYvUokMT/Projeto---M%C3%BAsica?node-id=0-1&t=WVPcLherEKcODLbF-1
 
 ---
@@ -14,7 +15,6 @@ O site apresenta o que é música, seus grandes grupos e estilos, e sua importâ
 - [Páginas do site](#-páginas-do-site)
 - [Tecnologias](#-tecnologias)
 - [Estrutura do projeto](#-estrutura-do-projeto)
-- [Como acessar e executar](#-como-acessar-e-executar)
 - [Padrões do código](#-padrões-do-código)
 - [Equipe](#-equipe)
 
@@ -45,16 +45,21 @@ Todas as páginas compartilham a mesma estrutura:
 ## 🛠 Tecnologias
 
 - **HTML5**, com `lang="pt-br"`, meta `description` em cada página e atributos de acessibilidade (`aria-label`, `aria-labelledby`, `alt` nas imagens).
+- 
 - **CSS3**, com um arquivo global e arquivos específicos por página.
+- 
 - **YouTube (iframe)**, para o vídeo educativo de gêneros musicais.
+- 
 - **GitHub Pages**, para a hospedagem do site.
+- 
+- **Figma**, Para prototipagem do site.
 
 ---
 
 ## 📁 Estrutura do projeto
 
 ```
-Projeto-m-sica/
+Musica-EtecPortasAbertas/
 ├── .vscode/                  # Configurações do editor
 ├── assets/                   # Imagens e ícones
 │   ├── icon/                 # Ícones (notas-musicais, coracao, cerebro, pessoas)
