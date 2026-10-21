@@ -1,42 +1,42 @@
 # 🎵 Música ETEC
 
-Site educativo sobre música, desenvolvido como Projeto Integrador do curso de **Informática para Internet** da **ETEC de Nova Odessa**, para o evento **ETEC de Portas Abertas**.
+O **Música ETEC** é um site sobre música feito como Projeto Integrador do curso de **Informática para Internet**, da **ETEC de Nova Odessa**, para o evento **ETEC de Portas Abertas**.
 
-O site apresenta conceitos sobre música, seus principais grupos e estilos, e sua importância para as emoções, a criatividade, a conexão entre pessoas e a identidade cultural.
+A ideia do site é apresentar um pouco sobre o que é música, seus estilos e grupos musicais, além de mostrar como ela faz parte do nosso dia a dia, das nossas emoções e da cultura.
 
-🔗 **Acesse o site:** https://victorgx7.github.io/Musica-EtecPortasAbertas/
+🔗 **Site:** https://victorgx7.github.io/Musica-EtecPortasAbertas/
 
 🎨 **Protótipo no Figma:** https://www.figma.com/design/OPh7Z2orXz0FEgmYvUokMT/Projeto---M%C3%BAsica
 
 ---
 
-## 📄 Páginas do site
+## 📄 Páginas do projeto
 
-| Arquivo | Página | Descrição |
-|---|---|---|
-| `index.html` | Home | Apresentação do projeto e atalhos para explorar os conteúdos. |
-| `sobre.html` | Sobre | Explica o que é música e sua presença na história da humanidade. |
-| `tiposmusicas.html` | Tipos musicais | Apresenta os grupos erudito, popular e folclórico, com conteúdos sobre gêneros musicais. |
-| `importancia.html` | Importância | Aborda emoções, criatividade, conexão entre pessoas e identidade cultural. |
-| `Creditos.html` | Créditos | Identifica a turma, os desenvolvedores e os professores orientadores. |
-| `desenvolvedores.html` | Desenvolvedores | Apresenta os integrantes da equipe e suas responsabilidades. |
-| `SobreEtec.html` | Sobre a ETEC | Apresenta informações sobre a ETEC de Nova Odessa e o Centro Paula Souza. |
-| `subdivisoes.html` | Subdivisões da música | Página adicional com conteúdo sobre os grupos musicais. O README registra esse arquivo porque ele existe no projeto, embora não esteja ligado à navegação principal. |
+| Arquivo | O que tem na página |
+|---|---|
+| `index.html` | Página inicial, com a apresentação do site e links para os conteúdos. |
+| `sobre.html` | Explica o que é música e fala um pouco sobre sua história. |
+| `tiposmusicas.html` | Apresenta os grupos musicais e alguns gêneros. |
+| `importancia.html` | Mostra a importância da música para as emoções, a criatividade e a cultura. |
+| `Creditos.html` | Reúne os créditos do projeto, a turma e os professores orientadores. |
+| `desenvolvedores.html` | Apresenta quem participou do desenvolvimento e suas responsabilidades. |
+| `SobreEtec.html` | Traz informações sobre a ETEC de Nova Odessa e o Centro Paula Souza. |
+| `subdivisoes.html` | Página complementar sobre as subdivisões musicais. Ela existe no projeto, mas não faz parte da navegação principal. |
 
-As páginas compartilham a navegação principal e o rodapé, com links para as demais seções e páginas institucionais.
+As páginas compartilham elementos como o menu e o rodapé, ajudando a manter a navegação parecida em todo o site.
 
-## 🛠️ Tecnologias
+## 🛠️ Tecnologias utilizadas
 
-- **HTML5** — estrutura e conteúdo das páginas.
-- **CSS3** — estilos, layouts e adaptação visual.
-- **YouTube** — incorporação de vídeos educativos em páginas que possuem esse conteúdo.
-- **Git e GitHub** — versionamento do código.
-- **GitHub Pages** — publicação do site.
-- **Figma** — prototipação da interface.
+- **HTML5:** estrutura e conteúdo das páginas.
+- **CSS3:** aparência, cores, espaçamentos e organização dos elementos.
+- **YouTube:** vídeos incorporados nas páginas que possuem esse conteúdo.
+- **Git e GitHub:** controle de versão e armazenamento do código.
+- **GitHub Pages:** publicação do site na internet.
+- **Figma:** criação do protótipo da interface.
 
 ## 📁 Estrutura do projeto
 
-A estrutura abaixo corresponde aos arquivos HTML identificados no repositório e aos arquivos CSS referenciados por essas páginas.
+Esta é uma visão geral das principais pastas e arquivos do projeto:
 
 ```text
 Musica-EtecPortasAbertas/
@@ -44,7 +44,7 @@ Musica-EtecPortasAbertas/
 ├── assets/
 │   ├── icon/
 │   ├── pessoas/
-│   └── imagens e recursos visuais do site
+│   └── outros recursos visuais
 ├── css/
 │   ├── style.css
 │   ├── home.css
@@ -65,30 +65,30 @@ Musica-EtecPortasAbertas/
 └── README.md
 ```
 
-### Organização dos arquivos
+### Como os arquivos estão organizados
 
-- **`assets/`**: imagens, ícones e outros recursos visuais.
-- **`assets/icon/`**: ícones utilizados no site.
-- **`assets/pessoas/`**: imagens relacionadas à equipe e aos professores.
-- **`css/style.css`**: estilos compartilhados, como navegação e rodapé.
-- **CSS específico por página**: cada página utiliza seu próprio arquivo de estilos junto com `css/style.css`.
+- **`assets/`:** guarda imagens e outros recursos visuais usados no site.
+- **`assets/icon/`:** reúne os ícones.
+- **`assets/pessoas/`:** contém imagens relacionadas à equipe e aos professores.
+- **`css/style.css`:** reúne estilos que podem ser usados em várias páginas, como o menu e o rodapé.
+- **Arquivos CSS das páginas:** guardam os estilos específicos de cada seção.
 
-> Observação: a árvore acima resume a estrutura principal. Os arquivos de imagem individuais foram agrupados para manter o README legível; os nomes e caminhos dos arquivos referenciados no HTML devem permanecer exatamente como estão no repositório.
+A estrutura acima é um resumo para facilitar a leitura. Os nomes e caminhos dos arquivos usados no HTML devem continuar iguais aos que estão no repositório.
 
-## ♿ Boas práticas
+## ♿ Alguns cuidados no desenvolvimento
 
-- Uso de textos alternativos em imagens relevantes.
-- Organização dos estilos comuns e específicos por página.
-- Metadados e títulos adequados às páginas.
-- Links externos configurados para abrir em nova aba quando necessário.
+- Usar textos alternativos em imagens quando necessário.
+- Separar os estilos compartilhados dos estilos específicos de cada página.
+- Manter títulos e informações das páginas organizados.
+- Configurar links externos para abrir em outra aba quando fizer sentido.
 
 ## 👥 Equipe
 
-| Nome | Função |
+| Integrante | Participação |
 |---|---|
-| Victor G. De Sousa | Desenvolvedor / Líder do projeto |
-| Luana de S. Retamero | Desenvolvedora / Designer |
-| Otávio B. Guedes | Desenvolvedor / Designer |
+| Victor G. De Sousa | Desenvolvimento e liderança do projeto |
+| Luana de S. Retamero | Desenvolvimento e design |
+| Otávio B. Guedes | Desenvolvimento e design |
 
 **Professores orientadores:** Samuel Santos e Camila Spadaro.
 
@@ -96,4 +96,4 @@ Musica-EtecPortasAbertas/
 
 ---
 
-Projeto acadêmico desenvolvido para aplicar conhecimentos de estruturação e estilização de páginas web.
+Projeto acadêmico desenvolvido para colocar em prática os conhecimentos de HTML, CSS e criação de sites.
