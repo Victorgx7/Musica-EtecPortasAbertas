@@ -37,8 +37,6 @@ A árvore abaixo foi conferida com os arquivos e pastas que estão no repositór
 
 ```text
 Musica-EtecPortasAbertas/
-├── .vscode/
-│   └── settings.json
 ├── assets/
 │   ├── Frequencia.jpeg
 │   ├── Harmonia.jpeg
@@ -90,7 +88,6 @@ Musica-EtecPortasAbertas/
 
 ### Para que servem as pastas?
 
-- **`.vscode/`**: configurações do editor Visual Studio Code.
 - **`assets/`**: imagens, logos e outros recursos visuais do site.
 - **`assets/icon/`**: favicons e ícones usados nas páginas.
 - **`assets/pessoas/`**: fotos dos integrantes e professores.
