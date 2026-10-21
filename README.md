@@ -2,7 +2,7 @@
 
 O **Música ETEC** é um site sobre música feito como Projeto Integrador do curso de **Informática para Internet**, da **ETEC de Nova Odessa**, para o evento **ETEC de Portas Abertas**.
 
-A ideia do site é apresentar um pouco sobre o que é música, seus estilos e grupos musicais, além de mostrar como ela faz parte do nosso dia a dia, das nossas emoções e da cultura.
+A ideia é apresentar o que é música, alguns grupos e estilos musicais e a importância dela no nosso dia a dia, nas emoções e na cultura.
 
 🔗 **Site:** https://victorgx7.github.io/Musica-EtecPortasAbertas/
 
@@ -10,77 +10,95 @@ A ideia do site é apresentar um pouco sobre o que é música, seus estilos e gr
 
 ---
 
-## 📄 Páginas do projeto
+## 📄 Páginas do site
 
-| Arquivo | O que tem na página |
+| Arquivo | Descrição |
 |---|---|
-| `index.html` | Página inicial, com a apresentação do site e links para os conteúdos. |
-| `sobre.html` | Explica o que é música e fala um pouco sobre sua história. |
-| `tiposmusicas.html` | Apresenta os grupos musicais e alguns gêneros. |
-| `importancia.html` | Mostra a importância da música para as emoções, a criatividade e a cultura. |
-| `Creditos.html` | Reúne os créditos do projeto, a turma e os professores orientadores. |
-| `desenvolvedores.html` | Apresenta quem participou do desenvolvimento e suas responsabilidades. |
-| `SobreEtec.html` | Traz informações sobre a ETEC de Nova Odessa e o Centro Paula Souza. |
-| `subdivisoes.html` | Página complementar sobre as subdivisões musicais. Ela existe no projeto, mas não faz parte da navegação principal. |
-
-As páginas compartilham elementos como o menu e o rodapé, ajudando a manter a navegação parecida em todo o site.
+| `index.html` | Página inicial do site. |
+| `sobre.html` | Conteúdo sobre o que é música e sua presença no cotidiano. |
+| `tiposmusicas.html` | Apresenta música erudita, popular e folclórica. |
+| `importancia.html` | Fala sobre a importância da música. |
+| `Creditos.html` | Reúne os créditos do projeto, a turma e os professores. |
+| `desenvolvedores.html` | Apresenta os integrantes da equipe. |
+| `SobreEtec.html` | Informações sobre a ETEC de Nova Odessa e o Centro Paula Souza. |
+| `subdivisoes.html` | Página complementar que reutiliza os estilos de tipos musicais. |
 
 ## 🛠️ Tecnologias utilizadas
 
-- **HTML5:** estrutura e conteúdo das páginas.
-- **CSS3:** aparência, cores, espaçamentos e organização dos elementos.
-- **YouTube:** vídeos incorporados nas páginas que possuem esse conteúdo.
-- **Git e GitHub:** controle de versão e armazenamento do código.
-- **GitHub Pages:** publicação do site na internet.
-- **Figma:** criação do protótipo da interface.
+- **HTML5** para estruturar o conteúdo.
+- **CSS3** para os estilos e o layout.
+- **YouTube** para vídeos incorporados, quando utilizados.
+- **Git e GitHub** para versionar e armazenar o código.
+- **GitHub Pages** para publicar o site.
+- **Figma** para o protótipo da interface.
 
-## 📁 Estrutura do projeto
+## 📁 Estrutura real do repositório
 
-Esta é uma visão geral das principais pastas e arquivos do projeto:
+A árvore abaixo foi conferida com os arquivos e pastas que estão no repositório. Os arquivos de imagem estão listados para ficar mais fácil localizar cada recurso.
 
 ```text
 Musica-EtecPortasAbertas/
 ├── .vscode/
+│   └── settings.json
 ├── assets/
+│   ├── Frequencia.jpeg
+│   ├── Harmonia.jpeg
+│   ├── NotaMusicais.jpeg
+│   ├── Pessoas.jpeg
+│   ├── TurmaInfo.jpeg
+│   ├── capa-sala.jpg
+│   ├── etec-nova-odessa.jpg
+│   ├── headphones-hero.jpg
+│   ├── instagram.png
+│   ├── logoInfo.jpeg
+│   ├── logo_cps_versao_br.png
+│   ├── logo_cps_versao_cor.png
+│   ├── musica-erudita.jpg
+│   ├── musica-folclorica.jpg
+│   ├── musica-popular.jpg
+│   ├── Ícone Musical Preto Minimalista.png
 │   ├── icon/
-│   ├── pessoas/
-│   └── outros recursos visuais
+│   │   ├── Favicon.png
+│   │   ├── Favicon2.png
+│   │   ├── cerebro.png
+│   │   ├── coracao.png
+│   │   ├── notas-musicais.png
+│   │   └── pessoas.png
+│   └── pessoas/
+│       ├── Camila.jpeg
+│       ├── Luana.jpeg
+│       ├── Otavio.jpeg
+│       ├── Samuel.jpeg
+│       └── Victor.jpeg
 ├── css/
-│   ├── style.css
-│   ├── home.css
-│   ├── sobre.css
-│   ├── tiposmusicas.css
-│   ├── importancia.css
 │   ├── creditos.css
 │   ├── desenvolvedores.css
-│   └── sobreEtec.css
-├── index.html
-├── sobre.html
-├── tiposmusicas.html
-├── importancia.html
+│   ├── home.css
+│   ├── importancia.css
+│   ├── sobre.css
+│   ├── sobreEtec.css
+│   ├── style.css
+│   └── tiposmusicas.css
 ├── Creditos.html
 ├── desenvolvedores.html
+├── importancia.html
+├── index.html
 ├── SobreEtec.html
+├── sobre.html
 ├── subdivisoes.html
+├── tiposmusicas.html
 └── README.md
 ```
 
-### Como os arquivos estão organizados
+### Para que servem as pastas?
 
-- **`assets/`:** guarda imagens e outros recursos visuais usados no site.
-- **`assets/icon/`:** reúne os ícones.
-- **`assets/pessoas/`:** contém imagens relacionadas à equipe e aos professores.
-- **`css/style.css`:** reúne estilos que podem ser usados em várias páginas, como o menu e o rodapé.
-- **Arquivos CSS das páginas:** guardam os estilos específicos de cada seção.
+- **`.vscode/`**: configurações do editor Visual Studio Code.
+- **`assets/`**: imagens, logos e outros recursos visuais do site.
+- **`assets/icon/`**: favicons e ícones usados nas páginas.
+- **`assets/pessoas/`**: fotos dos integrantes e professores.
+- **`css/`**: folhas de estilo. O arquivo `style.css` contém estilos compartilhados, e os outros arquivos cuidam de páginas específicas.
 
-A estrutura acima é um resumo para facilitar a leitura. Os nomes e caminhos dos arquivos usados no HTML devem continuar iguais aos que estão no repositório.
-
-## ♿ Alguns cuidados no desenvolvimento
-
-- Usar textos alternativos em imagens quando necessário.
-- Separar os estilos compartilhados dos estilos específicos de cada página.
-- Manter títulos e informações das páginas organizados.
-- Configurar links externos para abrir em outra aba quando fizer sentido.
+As páginas HTML carregam `css/style.css` junto com uma folha de estilo específica. A página `subdivisoes.html` usa `css/tiposmusicas.css`.
 
 ## 👥 Equipe
 
@@ -96,4 +114,4 @@ A estrutura acima é um resumo para facilitar a leitura. Os nomes e caminhos dos
 
 ---
 
-Projeto acadêmico desenvolvido para colocar em prática os conhecimentos de HTML, CSS e criação de sites.
+Projeto acadêmico criado para praticar HTML, CSS e desenvolvimento de sites.
