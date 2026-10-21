@@ -21,7 +21,6 @@ A ideia é apresentar o que é música, alguns grupos e estilos musicais e a imp
 | `Creditos.html` | Reúne os créditos do projeto, a turma e os professores. |
 | `desenvolvedores.html` | Apresenta os integrantes da equipe. |
 | `SobreEtec.html` | Informações sobre a ETEC de Nova Odessa e o Centro Paula Souza. |
-| `subdivisoes.html` | Página complementar que reutiliza os estilos de tipos musicais. |
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -85,7 +84,6 @@ Musica-EtecPortasAbertas/
 ├── index.html
 ├── SobreEtec.html
 ├── sobre.html
-├── subdivisoes.html
 ├── tiposmusicas.html
 └── README.md
 ```
