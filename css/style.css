@@ -154,9 +154,6 @@ nav a.active {
     background-color: #ffffff;
 }
 
-/* =========================
-   GALERIA DE IMAGENS
-========================= */
 
 .galeria {
     flex: 1;
@@ -177,9 +174,6 @@ nav a.active {
     border-radius: 12px;
 }
 
-/* =========================
-   BOTÕES
-========================= */
 
 .hero-botoes {
     display: flex;
@@ -217,7 +211,6 @@ nav a.active {
     opacity: 1;
 }
 
-/* Botão centralizado na página inteira */
 
 .hero-sobre .hero-botoes {
     position: absolute;
@@ -261,9 +254,6 @@ nav a.active {
     background-color: #7eeac3;
 }
 
-/* =========================
-   TIPOS MUSICAIS
-========================= */
 
 .tipos {
     max-width: 900px;
@@ -332,12 +322,11 @@ nav a.active {
     margin-top: 15px;
 }
 
-/* Estrelas e formatação do container e título */
 .tabela-container {
     max-width: 900px;
     margin: 50px auto;
     padding: 0 20px;
-    font-family: 'Times New Roman', Times, serif; /* Estilo clássico/serifado semelhante ao da imagem */
+    font-family: 'Times New Roman', Times, serif; 
     text-align: center;
 }
 
@@ -348,25 +337,24 @@ nav a.active {
     color: #000000;
 }
 
-/* Estrutura principal da tabela */
 .tabela-subdivisoes {
     width: 60%;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
     border-collapse: collapse;
-    border: 2px solid #000000; /* Borda exterior mais marcada */
+    border: 2px solid #000000; 
     background-color: #ffffff;
 }
 
-/* Estilização das células (cabeçalhos e dados) */
+
 .tabela-subdivisoes th, 
 .tabela-subdivisoes td {
-    border: 3px solid #000000; /* Linhas internas finas pretas */
+    border: 3px solid #000000; 
     padding: 25px 20px;
 }
 
-/* Estilo específico para o cabeçalho da tabela (th) */
+
 .tabela-subdivisoes th {
     font-size: 1.3rem;
     font-weight: bold;
@@ -374,17 +362,14 @@ nav a.active {
     text-align: center;
 }
 
-/* Estilo específico para o conteúdo das colunas (td) */
+
 .tabela-subdivisoes td {
     font-size: 1rem;
     line-height: 1.6;
-    text-align: justify; /* Alinhamento fluido do texto dentro da caixa */
+    text-align: justify; 
     vertical-align: top;
 }
 
-/* =========================
-   GÊNEROS MUSICAIS
-========================= */
 
 .generos {
     max-width: 900px;
@@ -408,9 +393,7 @@ nav a.active {
     margin: 0 auto;
 }
 
-/* =========================
-   CRÉDITOS
-========================= */
+
 
 .creditos {
     margin: 40px 10px 20px;
@@ -438,9 +421,7 @@ nav a.active {
     margin-bottom: 24px;
 }
 
-/* =========================
-   CAPA DA TURMA & CURSO
-========================= */
+
 
 .creditos-badge {
     display: inline-block;

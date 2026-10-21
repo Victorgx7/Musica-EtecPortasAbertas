@@ -5,9 +5,6 @@
     width: 100%;
 }
 
-/* =========================================
-   1. CABEÇALHO INSTITUCIONAL COM LOGO DO CURSO
-   ========================================= */
 
 .cr-header {
     margin-bottom: 48px;
@@ -53,7 +50,6 @@
     display: block;
 }
 
-/* Quando o arquivo de logo ainda não existir, oculta a caixinha automaticamente sem quebrar o layout */
 .cr-header-logo-box.cr-logo-placeholder {
     display: none;
 }
@@ -355,7 +351,7 @@
     margin-top: auto;
 }
 
-/* Espaçador moderado entre as duas seções */
+
 .cr-espaco-secoes {
     height: 48px;
 }
